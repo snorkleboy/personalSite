@@ -11,7 +11,7 @@ const projects = [];
 
 projects.push( new Project(
     'http://res.cloudinary.com/flyakite/image/upload/v1514414844/search_rifri5.png',
-    {source:'github.com',live:'heroku.com'},
+    {source:'http://www.github.com',live:'heroku.com'},
     ['rgba(100,100,100,1)'],
     "FlyaKite",
     'React, Rails, and Postgres powered EventBrite clone',
