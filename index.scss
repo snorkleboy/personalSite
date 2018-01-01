@@ -13,3 +13,12 @@
     height: 100%;
     overflow: hidden;
 }
+
+.svg-holder{
+    background-color: red;
+    flex-shrink: 0;
+}
+
+.linkList{
+    display: flex;
+}
