@@ -3,49 +3,122 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/5b61570599.js"></script>
-    <title>Artem Kharshan</title>
+    <title><Artem/></title>
      
     <link rel="stylesheet" href="application.css">
     <link rel="stylesheet" href="index.scss">
+    <link rel="stylesheet" href="projects.scss">
+    <link rel="stylesheet" href="sidebar.scss">
     <script src="main.js"></script>
 
-        <div class='topbar'>
-            <h1>I AM HEADER</h1>
-            <ul class='linkList'>
-                <li><a href='#'>link</a></li>
-                <li><a href='#'>link</a></li>
-                <li><a href='#'>link</a></li>
 
-            </ul>
-        </div>
 </head>
-    <body id='body'>
-    <h2 id='app'>
-        I CAN BE A SIDEBAR
-    </h2>
-    <main class='main'>
-        <div class='left'>
-            <h1>I AM ON THE LEFT</h1>
-            <img src='http://res.cloudinary.com/flyakite/image/upload/e_grayscale/v1514431823/download_3_ja5f6a.png'/>
-        </div>
 
-</div>
-        <div class='right'>
-
-            <h1>I AM ON THE RIGHT</h1>
-            <ul>
-                <li><a href='#'>I MIGHT BE A PROJECT</a></li>
-                <li><a href='#'>I MIGHT BE A PROJECT</a></li>
-                <li><a href='#'>I MIGHT BE A PROJECT</a></li>
+<body id='body'>
+    <div class='sidebar-sizer'>
+        <div id='sidebar' class='sidebar'>
+            <span class='sidebar-info'>
+                <h1>I AM TIM</h1>
+                <h2>SOMETHING</h2>
+                <a href='#'>github</a>
+                <a href='#'>linkedIn</a>
+            </span>
+            <ul class='linkList'>
+                <li>
+                    <a href='#about'>about me</a>
+                </li>
+                <li>
+                    <a href='#projects'>Projects</a>
+                </li>
+                <li>
+                    <a href='#'>Contact</a>
+                </li>
+                <li>
+                    <a href='#'>resume</a>
+                </li>
+        
             </ul>
         </div>
-    </main>
-    
-</body>
-<footer>
-    <div class='footer'>
-        <h1>I AM FOOTER</h1>
     </div>
-</footer>
+    <div class='unsidebar'>
+        <main class='main'>
+            <div class='left'>
+                <img src='http://res.cloudinary.com/flyakite/image/upload/e_grayscale/v1514431823/download_3_ja5f6a.png'/>
+            </div>
+
+            <div class='right about' id='about'>
+                <div>
+                    <h1> I AM TIM</h1>
+                    <h2> I MAKE CODE SOMETIMES</h2>
+                </div>
+                <h1> some kind of tagline and a link to <a href='#'> contact</a></h1>
+            </div>
+        </main>
+        <main>
+
+                <ul id='projects' class='project-list'>
+                    <li>
+                
+                        <div class='project-modal'>
+                            <ul>
+                                <li>
+                                    <h2>REACT</h2>
+                                </li>
+                                <li>
+                                    <h2>RUBY ON RAILS</h2>
+                                </li>
+                                <li>
+                                    <h2>SQL</h2>
+                                </li>
+                                <li>
+                                    <h2>SKILLS</h2>
+                                </li>
+                                <li>
+                                    <h2>TALENT</h2>
+                                </li>
+                            </ul>
+                            <a href=''>live</a>
+                            <a href=''>source</a>
+                        </div>
+                        <div class='project-holder'>
+                            <a href='#'>
+                                <img src='http://res.cloudinary.com/flyakite/image/upload/v1514414844/search_rifri5.png' />
+                            </a>
+                            <span>
+                                <h1>FLYaKITE</h1>
+                                <h2>a FullStack EventBrite clone</h2>
+                            </span>
+                            <button class='burger-button'>. . .</button>
+                        </div>
+                
+                    </li>
+                </ul>
+
+            </main>
+    </div>
+</body>
+
+
+
+<li class='template' id='projectTemplate'>
+    <div id='project-modal' class='project-modal'>
+        <ul>
+            <li>
+                <h2></h2>
+            </li>
+        </ul>
+        <a href=''>live</a>
+        <a href=''>source</a>
+    </div>
+    <div class='project-holder'>
+        <a href='#'>
+            <img src='' />
+        </a>
+        <span>
+            <h1 id='title'></h1>
+            <h2 id='header'></h2>
+        </span>
+    </div>
+
+</li>
 </html>

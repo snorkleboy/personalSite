@@ -1,0 +1,38 @@
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.project-list >li{
+    position: relative;
+    width: 33%;
+    height: 60%;
+    padding: 20px;
+}
+.project-holder{
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+
+}
+.project-holder img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+
+}
+
+.project-modal{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+
+    transition: .4s opacity ease;
+}
+.project-modal:hover{
+    opacity: 1;
+}
