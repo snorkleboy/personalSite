@@ -6,13 +6,14 @@
 .project-list >li{
     position: relative;
     width: 33%;
-    height: 60%;
+    height: 40%;
     padding: 20px;
 }
 .project-holder{
     background-color: grey;
     width: 100%;
     height: 100%;
+    box-shadow: 2px 5px 9px grey;
 
 }
 .project-holder img{

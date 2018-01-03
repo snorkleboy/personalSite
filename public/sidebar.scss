@@ -2,6 +2,7 @@
     height: 100%;
     width: 15vw;
     position: relative;
+    flex-shrink: 0;
 }
 
 .sidebar{
@@ -11,6 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    box-shadow: 2px 5px 9px grey;
 }
 .linklist{
     display: flex;
