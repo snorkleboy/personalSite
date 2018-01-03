@@ -22,6 +22,21 @@
     height: 100%;
 
 }
+.linklist li{
+    height: 100%;
+}
+.linklist li a{
+    display: block;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 50px;
+    border-left: 0px solid hsl(180, 100%, 50%);
+    transition:.5s border-left;
+}
+.linklist li a:hover{
+    border-left: 5px solid aqua;
+}
+
 .sidebar-info{
     display: flex;
     flex-direction: column;
