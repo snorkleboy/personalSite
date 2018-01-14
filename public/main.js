@@ -22,7 +22,7 @@ projects.push(new Project(
     'https://foleysproduce.com/wp-content/uploads/2016/07/Yellw-Onions.jpg',
     { source: 'http://www.github.com', live: 'heroku.com' },
     ['rgba(100,100,100,1)'],
-    "FlyaKite",
+    "onionup",
     'React, Rails, and Postgres powered EventBrite clone',
     ['react', 'css', 'stuff']
 ));
