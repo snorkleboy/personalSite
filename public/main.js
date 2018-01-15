@@ -9,31 +9,51 @@ const Project = function(img, links, colors, title, header, points){
 
 const projects = [];
 
-projects.push( new Project(
-    'http://res.cloudinary.com/flyakite/image/upload/v1514414844/search_rifri5.png',
-    {source:'http://www.github.com',live:'heroku.com'},
+projects.push(new Project(
+    'http://res.cloudinary.com/flyakite/image/upload/q_60/v1514414844/search_rifri5.png',
+    { source: 'http://www.github.com', live: 'heroku.com' },
     ['rgba(100,100,100,1)'],
     "FlyaKite",
     'React, Rails, and Postgres powered EventBrite clone',
-    ['react','css','stuff']
+    [
+        `-Implemented a Ruby On Rails powered PostgreSQL backend with
+custom routes and SQL queries to power front end searching and
+sorting`,
+        `-Designed an account system with authentication and protected
+routes on the front and backend`,
+        `-Integrated Cloudinary image hosting, Google Maps, and the
+Stripe Payment Gateway APIs`
+    ]
 ));
 
 projects.push(new Project(
-    'https://foleysproduce.com/wp-content/uploads/2016/07/Yellw-Onions.jpg',
+    'http://res.cloudinary.com/flyakite/image/upload/q_60/v1515983798/tor-logo-large-89ac1c118b86d69953fff1ab31128550fcce9a74162e9b3fb7d0fc4bfd83e1ed_u2mbbn.png',
     { source: 'http://www.github.com', live: 'heroku.com' },
     ['rgba(100,100,100,1)'],
-    "onionup",
-    'React, Rails, and Postgres powered EventBrite clone',
-    ['react', 'css', 'stuff']
+    "Onionup",
+    'A Vue/Vuex App for pinging Sites on the Onion Network',
+    [
+`-Utilized Ruby threads to send requests concurrently cutting wait times from nearly a minute to a few hundred milliseconds`,
+`-Designed Rails Tasks To ping sites in the background and maintained the Database
+limits using Heroku scheduler and ROR tasks`,
+`-Used Ruby's Socks Proxy implementation to route requests
+through a Tor network Node we established`
+]
 ));
 
 projects.push(new Project(
-    'http://res.cloudinary.com/flyakite/image/upload/v1514590288/download_2_hqyiv2.png',
+    'http://res.cloudinary.com/flyakite/image/upload/c_scale,q_56,w_203/v1515907377/download_1_fl6gow_kltvt8.png',
     { source: 'http://www.github.com', live: 'heroku.com' },
     ['rgba(100,100,100,1)'],
     "Compression Visualizer",
     'A javascript Quadtree Compression Algorithm',
-    ['Javascript', 'HTML5 Canvas', 'Single Page App']
+    [
+`-Formulated a Quadtree data structure to hold images pixel data`,
+`-Used Javascript Timeouts and some good old fashioned
+recursion to animate the process and allow the user to feed in
+parameters and click on nodes as the algorithm runs`,
+`-Created a Demo System that Runs the page and explains the algorithm`
+    ]
 ));
 
 projects.push(new Project(
@@ -41,10 +61,13 @@ projects.push(new Project(
     { source: 'http://www.github.com', live: 'heroku.com' },
     ['rgba(100,100,100,1)'],
     "TCP chat",
-    'A TCP based cli chat App',
-    ['Ruby', 'Sockets', 'TCP']
+    '-WIP- A CLI and Browser Instant Chat App',
+    ['-Designed a custom server using Ruby TCP Sockets', '-Made a CLI instant chat app with Ruby Threads and TCP sockets', '-Will make a HTML WebSocket based single page app instant chat that I will hook up with the TCP chat. ']
 ));
+`
 
+
+`
 
 
 const createProject = function(parent,newproj){

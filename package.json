@@ -1,7 +1,7 @@
 {
   "name": "artemkharshan",
   "version": "1.0.0",
-  "description": "",
+  "description": "my site",
   "main": "main.js",
   "dependencies": {
     "express": "^4.16.2"
@@ -12,5 +12,13 @@
     "start": "node server.js"
   },
   "author": "artem kharshan",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snorkleboy/personalSite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snorkleboy/personalSite/issues"
+  },
+  "homepage": "https://github.com/snorkleboy/personalSite#readme"
 }

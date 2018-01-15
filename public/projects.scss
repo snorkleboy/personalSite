@@ -4,16 +4,19 @@
     box-sizing: border-box;
     justify-content: center
 }
+.project-list ul{
+}
 .project-list >li{
     position: relative;
     width: 32%;
     height: 40%;
     padding: 20px;
+    
 }
 .project-holder{
-    background-color: grey;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    font-size: 12px;
     box-shadow: 2px 5px 9px grey;
 
 }
@@ -21,24 +24,56 @@
     width: 100%;
     height: 75%;
     object-fit: cover;
-
+    background-color: rgba(240, 248, 255, 0.295);
+}
+.project-holder h1{
+    font-size: 20px;
+    text-decoration:underline;
+}
+.project-holder h2{
+    font-size: 16px;
+    padding: 2px;
+    padding-bottom: 5px;
 }
 
 .project-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: aliceblue;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(194, 194, 194);
     width: 100%;
     height: 100%;
     text-align: center;
+    
+    text-align: left;
+    margin: 5px;
+    // padding-left: 15px;
+    font-size: 1.9vmin;
 
     transition: .4s opacity ease;
 }
 .project-modal:hover{
     opacity: 1;
 }
+.project-modal ul{
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+}
+.project-modal p{
+    margin: 6px;
+    padding: 5px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px 0 0 0 ;
+    color: rgb(90, 90, 90);
+}
+
 #points{
     list-style-type: circle;
     height: 80%;
@@ -46,12 +81,21 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.modal-a-holder{
+    display: flex;
+    justify-content: center;
+}
 .project-modal a{
-    background-color: beige;
-
+    background-color: rgb(173, 255, 228);
+    color: rgb(90, 90, 90);
+    padding: 3px;
+    margin: 6px;
+    transition: 1s all;
+    text-align: center;
+    padding: 15px;
 }
 .project-modal a:hover{
-    background-color: rgb(255, 255, 180);
+    background-color: rgb(236, 253, 247);
 }
 .title-header{
     text-align: center;
