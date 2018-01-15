@@ -39,6 +39,11 @@ main{
 }
 .right h1,.right h2,.right h3{
     font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.right h3{
+    margin-left: 4px;
 }
 .right span{
     display: flex;
@@ -93,3 +98,30 @@ path{
 }
 
 
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 10px;
+    line-height: 2.88rem;
+}
+
+.about-me blockquote{
+    border-left: 4px solid rgb(255, 145, 0);
+    
+    padding-left: 30px;
+    font-size:30px;
+    color: rgb(219, 142, 42);
+}
+.about-me h1{
+    font-size:30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-me p{
+    font-size: 20px;
+    font-size: 1.68rem;
+    font-weight: 275;
+}

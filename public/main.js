@@ -45,13 +45,7 @@ projects.push(new Project(
     ['Ruby', 'Sockets', 'TCP']
 ));
 
-document.addEventListener('DOMContentLoaded', function(){
-    const projectlist = document.getElementById('projects')
-    projects.forEach(function(project){
-        createProject(projectlist, project);
-    });
 
-});
 
 const createProject = function(parent,newproj){
     const template = document.getElementById('projectTemplate').cloneNode(true);
@@ -85,4 +79,45 @@ const createProject = function(parent,newproj){
     template.className = '';
     parent.appendChild(template);
 }
+const activeLinker = function(){
+    let tick = false;
+    let current = null;
+    const seperators = document.querySelectorAll('.seperator')
+    const anchors = document.querySelectorAll(`.aLink`);
+    const seperatorsY = [];
+    seperators.forEach((sep) => {
+        seperatorsY.push(sep.offsetTop);
+    });
+    document.addEventListener('scroll', (e) => {
+        if (!tick) {
+            tick = true;
+            setTimeout(() => {
+                const winY = window.scrollY;
+                console.log('scroll:', winY);
+                seperatorsY.forEach((sep, i) => console.log(i, sep))
+                
+                if (winY > 0 && winY < seperatorsY[1]-200){
+                    current = anchors[0];
+                }else if (winY>seperatorsY[0] && winY < seperatorsY[2]-400){
+                    current = anchors[1];
+                }else if (winY>seperatorsY[1] && winY< seperatorsY[3]-400){
+                    current = anchors[2];
+                }else if (winY>seperatorsY[3]){
+                    current = anchors[3];
+                }
+                anchors.forEach((a) => a === current ? a.classList.add('active') : a.classList.remove('active'));
+                tick = false;
+            }, 100);
+        }
+    });
+};
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const projectlist = document.getElementById('projects')
+    projects.forEach(function (project) {
+        createProject(projectlist, project);
+    });
+    activeLinker();
+
+});

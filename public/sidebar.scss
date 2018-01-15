@@ -31,13 +31,17 @@
     box-sizing: border-box;
     padding: 50px;
     border-left: 0px solid hsl(180, 100%, 50%);
-    transition:.5s border-left;
+    transition:.5s all;
 }
 .linklist li a:hover{
     border-left: 5px solid aqua;
     font-weight: 700;
 }
-
+.active{
+    border-left: 50px solid aqua;
+    font-weight: 700;
+    // background-color: rgba(0, 255, 255, 0.068)
+}
 .sidebar-info{
     display: flex;
     flex-direction: column;
