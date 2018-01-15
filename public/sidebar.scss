@@ -52,10 +52,16 @@
     background-color: aqua;
     box-shadow: 1px 2px 4px grey;
 }
-.sidebar-info{
+.sidebar-info h1{
+    font-size: 20px;
     // background-image: url("http://res.cloudinary.com/flyakite/image/upload/w_200,h_200,c_fill,g_face,r_max/v1514841885/Artem_Kharshan_1_cmujvq.jpg");
     
     // background-size: contain;
     // background-repeat: no-repeat;
     // background-position: top center;
+}
+
+.sidebar-info h5{
+    font-size: 18px;
+    font-weight: 200;
 }
