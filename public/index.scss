@@ -144,11 +144,18 @@ path{
 .contact-list{
     font-size: 48px;
 }
+.contact-list a{
+    height: fit-content;
+}
 .contact-list li{
     display: flex;
+    justify-content: left;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 .contact-list i{
     padding-right: 5px;
-    margin-bottom: 50px;
+    
+    font-size: 100px;
 }

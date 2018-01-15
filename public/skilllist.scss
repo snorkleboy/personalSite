@@ -17,6 +17,10 @@
     height: fit-content;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 10px;
+}
+.skilllist h1{
+    padding-top:5px;
 }
 .skilllist div{
     object-fit: contain;
