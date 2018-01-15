@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    justify-content: center
 }
 .project-list >li{
     position: relative;
-    width: 33%;
+    width: 32%;
     height: 40%;
     padding: 20px;
 }

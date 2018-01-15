@@ -80,6 +80,9 @@ const createProject = function(parent,newproj){
     parent.appendChild(template);
 }
 const activeLinker = function(){
+
+
+
     let tick = false;
     let current = null;
     const seperators = document.querySelectorAll('.seperator')
@@ -88,11 +91,27 @@ const activeLinker = function(){
     seperators.forEach((sep) => {
         seperatorsY.push(sep.offsetTop);
     });
+
+    let winY = window.scrollY;
+    if (winY > seperatorsY[0]-500 && winY < seperatorsY[1]) {
+        current = anchors[0];
+    } else if (winY > seperatorsY[0]-500 && winY < seperatorsY[2]) {
+        current = anchors[1];
+    } else if (winY > seperatorsY[1]-500 && winY < seperatorsY[3]) {
+        current = anchors[2];
+    } else if (winY > seperatorsY[3] - 500) {
+        current = anchors[3];
+    }   else{
+        current= null;
+    }
+    anchors.forEach((a) => a === current ? a.classList.add('active') : a.classList.remove('active'));
+
+
     document.addEventListener('scroll', (e) => {
         if (!tick) {
             tick = true;
             setTimeout(() => {
-                const winY = window.scrollY;
+                winY = window.scrollY;
                 console.log('scroll:', winY);
                 seperatorsY.forEach((sep, i) => console.log(i, sep))
                 
@@ -102,12 +121,14 @@ const activeLinker = function(){
                     current = anchors[1];
                 }else if (winY>seperatorsY[1] && winY< seperatorsY[3]-400){
                     current = anchors[2];
-                }else if (winY>seperatorsY[3]){
+                }else if (winY>seperatorsY[3]-300){
                     current = anchors[3];
+                }else{
+                    current = null;
                 }
                 anchors.forEach((a) => a === current ? a.classList.add('active') : a.classList.remove('active'));
                 tick = false;
-            }, 100);
+            }, 200);
         }
     });
 };

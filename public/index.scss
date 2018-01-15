@@ -4,11 +4,25 @@
 
 body{
     display: flex;
-    background-image: url(http://www.webreference.com/dhtml/column8/grid.gif);
+        background-color: #fdfdfd;
+    background-image:linear-gradient(#f3f3f3, #e0e0e0);
+    background-image:       linear-gradient(0deg, transparent 24%,
+     rgba(36, 36, 36, 0.034) 25%, rgba(161, 161, 161, 0.05) 26%, transparent 27%, transparent 74%,
+     rgba(189, 189, 189, 0.05) 75%, rgba(158, 158, 158, 0.05) 76%, transparent 77%, transparent),
+     linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%,
+     rgba(85, 85, 85, 0.212) 26%, transparent 27%, transparent 74%,
+     rgba(85, 85, 85, 0.096) 5%,
+     rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+  height:100%;
+  background-size:50px 50px;
 font-family: "Roboto",sans-serif;
+}
+.unsidebar{
+    width: 85vw;
 }
 
 main{
+    box-sizing: border-box;
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -42,7 +56,7 @@ main{
     margin: 0;
     padding: 0;
 }
-.right h3{
+.right h3, .right h2{
     margin-left: 4px;
 }
 .right span{
@@ -124,4 +138,16 @@ path{
     font-size: 20px;
     font-size: 1.68rem;
     font-weight: 275;
+}
+
+.contact-list{
+    font-size: 48px;
+}
+.contact-list li{
+    display: flex;
+}
+
+.contact-list i{
+    padding-right: 5px;
+    margin-bottom: 50px;
 }
