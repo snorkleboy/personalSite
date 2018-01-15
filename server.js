@@ -4,7 +4,7 @@ var path = require('path');
 
 let port = process.env.PORT || 3000;
 // Define the port to run on
-app.set('port', 3000);
+app.set('port', port);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
