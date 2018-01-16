@@ -103,42 +103,42 @@ const activeLinker = function(){
     let current = null;
     const seperators = document.querySelectorAll('.seperator')
     const anchors = document.querySelectorAll(`.aLink`);
-    const seperatorsY = [];
+    const sepY = [];
     seperators.forEach((sep) => {
-        seperatorsY.push(sep.offsetTop);
+        sepY.push(sep.offsetTop);
     });
-
+    //run once for when you land on page
     let winY = window.scrollY;
-    if (winY > seperatorsY[0]-400 && winY < seperatorsY[1]) {
+    if (winY > sepY[0]*.7 && winY < sepY[1]) {
         current = anchors[0];
-    } else if (winY > seperatorsY[1]-400 && winY < seperatorsY[2]) {
+    } else if (winY > sepY[1] - .2*(sepY[1]-sepY[0]) && winY < sepY[2]) {
         current = anchors[1];
-    } else if (winY > seperatorsY[1]-500 && winY < seperatorsY[3]) {
+    } else if (winY > sepY[1] - .2 * (sepY[2] - sepY[1]) && winY < sepY[3]) {
         current = anchors[2];
-    } else if (winY > seperatorsY[3] - 500) {
+    } else if (winY > sepY[3] - .2 * (sepY[3] - sepY[2])) {
         current = anchors[3];
     }   else{
         current= null;
     }
     anchors.forEach((a) => a === current ? a.classList.add('active') : a.classList.remove('active'));
 
-
+    //run every time on scroll
     document.addEventListener('scroll', (e) => {
         if (!tick) {
             tick = true;
             setTimeout(() => {
                 winY = window.scrollY;
-                // seperatorsY.forEach((sep, i) => console.log(i, sep))
+                // sepY.forEach((sep, i) => console.log(i, sep))
                 
-                if (winY > seperatorsY[0]-400 && winY < seperatorsY[1]-500){
+                if (winY > sepY[0]-400 && winY < sepY[1]-500){
                     current = anchors[0];
 
-                } else if (winY > (seperatorsY[1] - 500) && winY < seperatorsY[2]-400){
+                } else if (winY > (sepY[1] - 500) && winY < sepY[2]-400){
                     current = anchors[1];
-                }else if (winY>seperatorsY[2]-400 && winY< seperatorsY[3]-400){
+                }else if (winY>sepY[2]-400 && winY< sepY[3]-400){
                     
                     current = anchors[2];
-                }else if (winY>seperatorsY[3]-300){
+                }else if (winY>sepY[3]-300){
                     current = anchors[3];
                 }else{
                     current = null;
