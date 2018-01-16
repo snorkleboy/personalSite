@@ -11,6 +11,8 @@
     width: 32%;
     height: 40%;
     padding: 20px;
+    min-width: 262px;
+    min-height: 300px;
     
 }
 .project-holder{
@@ -69,7 +71,7 @@
 .project-modal p{
     margin: 6px;
     padding: 5px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px 0 0 0 ;
     color: rgb(90, 90, 90);
 }

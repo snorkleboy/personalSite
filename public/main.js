@@ -116,9 +116,9 @@ const activeLinker = function(){
     });
 
     let winY = window.scrollY;
-    if (winY > seperatorsY[0]-500 && winY < seperatorsY[1]) {
+    if (winY > seperatorsY[0]-400 && winY < seperatorsY[1]) {
         current = anchors[0];
-    } else if (winY > seperatorsY[0]-500 && winY < seperatorsY[2]) {
+    } else if (winY > seperatorsY[1]-400 && winY < seperatorsY[2]) {
         current = anchors[1];
     } else if (winY > seperatorsY[1]-500 && winY < seperatorsY[3]) {
         current = anchors[2];
@@ -135,14 +135,15 @@ const activeLinker = function(){
             tick = true;
             setTimeout(() => {
                 winY = window.scrollY;
-                console.log('scroll:', winY);
                 seperatorsY.forEach((sep, i) => console.log(i, sep))
                 
-                if (winY > 0 && winY < seperatorsY[1]-200){
+                if (winY > seperatorsY[0]-400 && winY < seperatorsY[1]-500){
                     current = anchors[0];
-                }else if (winY>seperatorsY[0] && winY < seperatorsY[2]-400){
+
+                } else if (winY > (seperatorsY[1] - 500) && winY < seperatorsY[2]-400){
                     current = anchors[1];
-                }else if (winY>seperatorsY[1] && winY< seperatorsY[3]-400){
+                }else if (winY>seperatorsY[2]-400 && winY< seperatorsY[3]-400){
+                    
                     current = anchors[2];
                 }else if (winY>seperatorsY[3]-300){
                     current = anchors[3];
