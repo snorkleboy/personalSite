@@ -30,7 +30,8 @@
     display: block;
     height: 30%;
     box-sizing: border-box;
-    padding: 50px;
+    text-align: center;
+    padding: 50px 0 50px 0;
     border-left: 0px solid hsl(180, 100%, 50%);
     transition:.5s all;
 }
@@ -65,4 +66,6 @@
 .sidebar-info h5{
     font-size: 18px;
     font-weight: 200;
+    margin: 5px;
+    padding: 5px;
 }

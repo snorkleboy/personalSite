@@ -17,6 +17,7 @@ body{
   background-size:50px 50px;
 font-family: "Roboto",sans-serif;
 color: #333333;
+
 }
 .unsidebar{
     width: 85vw;
@@ -33,6 +34,8 @@ main{
     width: 100%;
     text-align: center;
     justify-content: center;
+
+    min-width: 600px;
 }
 .first-main{
     margin: 0;
