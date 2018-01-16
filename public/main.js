@@ -16,13 +16,9 @@ projects.push(new Project(
     "FlyaKite",
     'React, Rails, and Postgres powered EventBrite clone',
     [
-        `Implemented a Ruby On Rails powered PostgreSQL backend with
-custom routes and SQL queries to power front end searching and
-sorting`,
-        `Designed an account system with authentication and protected
-routes on the front and backend`,
-        `Integrated Cloudinary image hosting, Google Maps, and the
-Stripe Payment Gateway APIs`
+        `Implemented a Ruby On Rails powered PostgreSQL backend with custom routes and SQL queries to power front end searching and sorting`,
+        `Designed an account system with authentication and protected routes on the front and backend`,
+        `Integrated Cloudinary image hosting, Google Maps, and the Stripe Payment Gateway APIs`
     ]
 ));
 
@@ -34,10 +30,8 @@ projects.push(new Project(
     'A Vue/Vuex App for pinging Sites on the Onion Network',
     [
 `Utilized Ruby threads to send requests concurrently cutting wait times from nearly a minute to a few hundred milliseconds`,
-`Designed Rails Tasks To ping sites in the background and maintained the Database
-limits using Heroku scheduler and ROR tasks`,
-`Used Ruby's Socks Proxy implementation to route requests
-through a Tor network Node we established`
+`Designed Rails Tasks To ping sites in the background and maintained the Database limits using Heroku scheduler and ROR tasks`,
+`Used Ruby's Socks Proxy implementation to route requests through a Tor network Node we established`
 ]
 ));
 
@@ -49,8 +43,7 @@ projects.push(new Project(
     'A javascript Quadtree Compression Algorithm',
     [
 `Formulated a Quadtree data structure to hold images pixel data`,
-`Used Javascript Timeouts and some good old fashioned
-recursion to animate the process and allow the user to feed in
+`Used Javascript Timeouts and some good old fashioned recursion to animate the process and allow the user to feed in
 parameters and click on nodes as the algorithm runs`,
 `Created a Demo System that Runs the page and explains the algorithm`
     ]
