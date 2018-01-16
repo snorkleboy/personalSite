@@ -135,7 +135,7 @@ const activeLinker = function(){
             tick = true;
             setTimeout(() => {
                 winY = window.scrollY;
-                seperatorsY.forEach((sep, i) => console.log(i, sep))
+                // seperatorsY.forEach((sep, i) => console.log(i, sep))
                 
                 if (winY > seperatorsY[0]-400 && winY < seperatorsY[1]-500){
                     current = anchors[0];
