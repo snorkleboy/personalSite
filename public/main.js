@@ -16,12 +16,12 @@ projects.push(new Project(
     "FlyaKite",
     'React, Rails, and Postgres powered EventBrite clone',
     [
-        `-Implemented a Ruby On Rails powered PostgreSQL backend with
+        `Implemented a Ruby On Rails powered PostgreSQL backend with
 custom routes and SQL queries to power front end searching and
 sorting`,
-        `-Designed an account system with authentication and protected
+        `Designed an account system with authentication and protected
 routes on the front and backend`,
-        `-Integrated Cloudinary image hosting, Google Maps, and the
+        `Integrated Cloudinary image hosting, Google Maps, and the
 Stripe Payment Gateway APIs`
     ]
 ));
@@ -33,10 +33,10 @@ projects.push(new Project(
     "Onionup",
     'A Vue/Vuex App for pinging Sites on the Onion Network',
     [
-`-Utilized Ruby threads to send requests concurrently cutting wait times from nearly a minute to a few hundred milliseconds`,
-`-Designed Rails Tasks To ping sites in the background and maintained the Database
+`Utilized Ruby threads to send requests concurrently cutting wait times from nearly a minute to a few hundred milliseconds`,
+`Designed Rails Tasks To ping sites in the background and maintained the Database
 limits using Heroku scheduler and ROR tasks`,
-`-Used Ruby's Socks Proxy implementation to route requests
+`Used Ruby's Socks Proxy implementation to route requests
 through a Tor network Node we established`
 ]
 ));
@@ -48,11 +48,11 @@ projects.push(new Project(
     "Compression Visualizer",
     'A javascript Quadtree Compression Algorithm',
     [
-`-Formulated a Quadtree data structure to hold images pixel data`,
-`-Used Javascript Timeouts and some good old fashioned
+`Formulated a Quadtree data structure to hold images pixel data`,
+`Used Javascript Timeouts and some good old fashioned
 recursion to animate the process and allow the user to feed in
 parameters and click on nodes as the algorithm runs`,
-`-Created a Demo System that Runs the page and explains the algorithm`
+`Created a Demo System that Runs the page and explains the algorithm`
     ]
 ));
 
@@ -62,7 +62,7 @@ projects.push(new Project(
     ['rgba(100,100,100,1)'],
     "TCP chat",
     '-WIP- A CLI and Browser Instant Chat App',
-    ['-Designed a custom server using Ruby TCP Sockets', '-Made a CLI instant chat app with Ruby Threads and TCP sockets', '-Will make a HTML WebSocket based single page app instant chat that I will hook up with the TCP chat. ']
+    ['Designed a custom server using Ruby TCP Sockets', 'Made a CLI instant chat app with Ruby Threads and TCP sockets', 'Will make a HTML WebSocket based single page app instant chat that I will hook up with the TCP chat. ']
 ));
 `
 
@@ -80,7 +80,7 @@ const createProject = function(parent,newproj){
     const liveEl = template.querySelector('#live');
     const sourceEl = template.querySelector('#source');
     newproj.points.forEach( function(point){
-        const pointEl = document.createElement('p');
+        const pointEl = document.createElement('li');
         pointEl.innerText=point;
         pointList.appendChild(pointEl);
     });
