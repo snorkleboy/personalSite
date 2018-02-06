@@ -147,6 +147,7 @@ path{
 
 .contact-list{
     font-size: 48px;
+    word-break: break-word;
 }
 .contact-list a{
     height: fit-content;
