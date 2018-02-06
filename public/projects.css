@@ -30,7 +30,8 @@
 }
 .project-holder h1{
     font-size: 20px;
-    text-decoration:underline;
+    font-weight: 700;
+    padding: 10px;
 }
 .project-holder h2{
     font-size: 16px;
@@ -68,6 +69,7 @@
 .project-modal > h1{
     text-align: center;
     padding-top: 15px;
+    font-weight: 700;
 }
 .project-modal ul{
     background-color: rgb(255, 255, 255);
