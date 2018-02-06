@@ -64,8 +64,10 @@
 .project-modal:hover{
     opacity: 1;
 }
+
 .project-modal > h1{
     text-align: center;
+    padding-top: 15px;
 }
 .project-modal ul{
     background-color: rgb(255, 255, 255);
@@ -106,4 +108,10 @@
 .title-header{
     text-align: center;
     padding: 12px;
+}
+
+@media (max-width: 360px) {
+    .sidebar-info {
+        display: none;
+    }
 }
