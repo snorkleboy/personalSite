@@ -69,6 +69,7 @@ projects.push(new Project(
 
 const projTemplate = `
     <div id='project-modal' class='project-modal'>
+        <h1 id='modal-title'></h1>
         <ul id='points'>
 
         </ul>
@@ -96,6 +97,9 @@ const createProject = function(parent,newproj){
     const pointList = template.querySelector('#points');
     const liveEl = template.querySelector('#live');
     const sourceEl = template.querySelector('#source');
+    const modalTitle = template.querySelector('#modal-title');
+
+    modalTitle.innerText = newproj.title;
     newproj.points.forEach( function(point){
         const pointEl = document.createElement('li');
         pointEl.innerText=point;

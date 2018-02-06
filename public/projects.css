@@ -47,7 +47,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(194, 194, 194);
     width: 100%;
     height: 100%;
@@ -55,16 +55,20 @@
     
     text-align: left;
     margin: 5px;
-    // padding-left: 15px;
-    font-size: 1.9vmin;
+    /* padding-left: 15px; */
+    font-size: 90%;
+    word-wrap: break-word;
 
     transition: .4s opacity ease;
 }
 .project-modal:hover{
     opacity: 1;
 }
+.project-modal > h1{
+    text-align: center;
+}
 .project-modal ul{
-    background-color: rgb(232, 218, 247);
+    background-color: rgb(255, 255, 255);
     list-style-position: inside;
 
     list-style-type: square;
@@ -101,4 +105,5 @@
 }
 .title-header{
     text-align: center;
+    padding: 12px;
 }
