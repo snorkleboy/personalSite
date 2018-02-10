@@ -1,7 +1,8 @@
 .sidebar-sizer{
     height: 100%;
     flex: 0 0 15vw;
-    min-width: 15vw;
+    /* min-width: 15vw; */
+    max-width: 200px;
     position: relative;
     /* flex-shrink: 0; */
 }
@@ -15,6 +16,7 @@
     align-items: center;
     background-color: white;
     min-width: 100px;
+    max-width: 200px;
     box-shadow: 2px 5px 9px grey;
 }
 .linklist{
@@ -81,13 +83,16 @@
     .sidebar-sizer{
         height: 15%;
         width: 100%;
+        max-width: inherit;
+        max-height: 150px;
     }
     .sidebar{
-       
+        max-width: inherit;
         height: 15%;
         width: 100%;
         flex-direction: row;
         z-index: 100;
+        max-height: 150px;
     }
     .linklist{
         flex-direction: row;

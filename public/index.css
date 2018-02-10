@@ -114,6 +114,7 @@ path{
     padding-left: 10%;
     min-width: 600px;
     line-height: 2;
+    box-sizing: border-box;
 }
 
 
