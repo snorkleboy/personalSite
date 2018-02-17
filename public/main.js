@@ -46,7 +46,7 @@ projects.push(new Project(
 
 projects.push(new Project(
     'http://res.cloudinary.com/flyakite/image/upload/c_scale,q_56,w_203/v1515907377/download_1_fl6gow_kltvt8.png',
-    { source: 'https://github.com/snorkleboy/Compression-visualizer', live: 'http://quadtree.artemkharshan.com' },
+    { source: 'https://github.com/snorkleboy/Compression-visualizer', live: 'https://imagereader.herokuapp.com' },
     ['rgba(100,100,100,1)'],
     "Compression Visualizer",
     'A javascript Quadtree Compression Algorithm',
