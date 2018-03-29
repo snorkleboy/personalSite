@@ -58,7 +58,7 @@ projects.push(new Project(
 ));
 
 projects.push(new Project(
-    'https://www.tcpi.com/wp-content/themes/Divi-child/images/tcp-logo.svg',
+    'http://res.cloudinary.com/flyakite/image/upload/v1522352789/logo_znrlin.png',
     { source: 'https://github.com/snorkleboy/TCPchat', live: 'http://chat.artemkharshan.com' },
     ['rgba(100,100,100,1)'],
     "TCP chat",
