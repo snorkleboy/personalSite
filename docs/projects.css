@@ -1,6 +1,10 @@
 .project-list{
-    display: flex;
-    flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        /* display: flex; */
+
+        /* flex-wrap: wrap; */
     box-sizing: border-box;
     justify-content: center
 }
@@ -8,8 +12,8 @@
 }
 .project-list >li{
     position: relative;
-    width: 33%;
-    height: 45%;
+    /* width: 33%; */
+    /* height: 45%; */
     padding: 20px;
     min-width: 262px;
     min-height: 300px;
@@ -110,6 +114,12 @@
 .title-header{
     text-align: center;
     padding: 12px;
+}
+
+@media (max-width:1000px) {
+    .project-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 360px) {
