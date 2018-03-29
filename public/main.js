@@ -48,13 +48,12 @@ projects.push(new Project(
     'http://res.cloudinary.com/flyakite/image/upload/c_scale,q_56,w_203/v1515907377/download_1_fl6gow_kltvt8.png',
     { source: 'https://github.com/snorkleboy/Compression-visualizer', live: 'https://imagereader.herokuapp.com' },
     ['rgba(100,100,100,1)'],
-    "Compression Visualizer",
-    'A javascript Quadtree Compression Algorithm',
+    "TFin",
+    'A stock visualizer that uses React and D3 to chart and organize data from IEX and Quandle',
     [
-`Formulated a Quadtree data structure to hold images pixel data`,
-`Used Javascript Timeouts and some good old fashioned recursion to animate the process and allow the user to feed in
-parameters and click on nodes as the algorithm runs`,
-`Created a Demo System that Runs the page and explains the algorithm`
+`Implimented D3 to create responsive and informative Stock Graphs`,
+`integrated IEX,Quandle, and Yahoo and Economist RSS feeds using their API's`,
+`Use Mongo and Express for user Authentication and storing common data`
     ]
 ));
 
@@ -67,6 +66,19 @@ projects.push(new Project(
     ['Designed a custom server using Ruby TCP Sockets', 'Made a CLI instant chat app with Ruby Threads and TCP sockets', 'Will make a HTML WebSocket based single page app instant chat that I will hook up with the TCP chat. ']
 ));
 
+projects.push(new Project(
+    'http://res.cloudinary.com/flyakite/image/upload/v1521700984/logo_kyeatu.png', {
+        source: 'https://github.com/snorkleboy/Mern',
+        live: 'http://tfin.artemkharshan.com'
+    }, ['rgba(100,100,100,1)'],
+    "Compression Visualizer",
+    'A javascript Quadtree Compression Algorithm', [
+        `Formulated a Quadtree data structure to hold images pixel data`,
+        `Used Javascript Timeouts and some good old fashioned recursion to animate the process and allow the user to feed in
+parameters and click on nodes as the algorithm runs`,
+        `Created a Demo System that Runs the page and explains the algorithm`
+    ]
+));
 const projTemplate = `
     <div id='project-modal' class='project-modal'>
         <h1 id='modal-title'></h1>
