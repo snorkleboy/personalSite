@@ -81,6 +81,13 @@ projects.push(new Project(
     ]
 ));
 const projTemplate = `
+    <div class='project-holder'>
+            <img src='' />
+        <span class='title-header'>
+            <h1 class='title'></h1>
+            <h2 class='header'></h2>
+        </span>
+    </div>
     <div id='project-modal' class='project-modal'>
         <h1 id='modal-title'></h1>
         <ul id='points'>
@@ -91,13 +98,6 @@ const projTemplate = `
             <a id='source' href=''>source</a>
         </div>
 
-    </div>
-    <div class='project-holder'>
-            <img src='' />
-        <span class='title-header'>
-            <h1 class='title'></h1>
-            <h2 class='header'></h2>
-        </span>
     </div>
 `
 
